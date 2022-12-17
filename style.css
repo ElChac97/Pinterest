@@ -45,8 +45,7 @@ header input{
     border-radius: 50px;
     border-style: none;
     align-items: center;
-    width: 56.25em;
-   
+    width: 900px;
 }
 
 header input:hover{
@@ -59,7 +58,7 @@ header input:active{
 }
 
 header form{
-    width: 50.25em;
+    width: 900px;
     margin-right: 16px;
 }
 
@@ -137,9 +136,92 @@ div img:active{
 }
 
 
-@media screen and (max-width: 1100px ) {
+   
+@media screen and (max-width: 1333px ) {
+    
+    header input{
+        width: 600px;
+    }
+
+    header form{
+        width: 600px;
+    }
     .grid{
         grid-template-columns: repeat(4, 12em);
+        grid-template-rows: repeat(20, 22em);
+     }
+
+     .abajo{
+        display: grid;
+        align-self: flex-start;
+        height: 350px;
+        width: 200px;
+     }
+
+     .ancho{
+        grid-row: 1;
+        height: 350px;
+        width: 200px;
+    }
+    
+    .largo{
+        grid-column: 1;
+        height: 350px;
+        width: 200px;
+    }
+    
+    .largoarriba{
+        grid-column: 1;
+        height: 350px;
+        width: 200px;
+    }
+    
+    .cuatro{
+        grid-column: 1;
+        height: 350px;
+        width: 200px;
+    }
+    
+    .americano{
+        grid-row: 1;
+        height: 350px;
+        width: 200px;
+    }
+    
+    .arriba2{
+        grid-column: 1;
+        height: 350px;
+        width: 200px;
+    }
+    
+    .arriba3{ 
+        grid-column: 1;
+        height: 350px;
+        width: 200px;
+    
+    }
+    .items{
+        height: 350px;
+        width: 200px;
+      }
+
+    .tren{
+        height: 740px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1033px ) {
+    
+    header input{
+        width: 300px;
+    }
+
+    header form{
+        width: 300px;
+    }
+    .grid{
+        grid-template-columns: repeat(3, 12em);
         grid-template-rows: repeat(20, 22em);
      }
 
