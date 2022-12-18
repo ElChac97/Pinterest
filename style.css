@@ -14,6 +14,7 @@
     width: 100%;
     height: 10vh;
     background-color: white;
+    z-index: 1;
 }
 
 
@@ -37,12 +38,17 @@ header p {
     background-color: black;
     color: white;
     border-radius: 40%;
+    transition: all 500 ms ease-out;
+}
 
+.ih:hover{
+    cursor: pointer;
 }
 
 header img:hover{
     background-color: rgb(237, 233, 233);
     border-radius: 50px;
+    cursor: pointer;
 }
 header input{
     margin: 10px 16px 0px 16px;
@@ -57,6 +63,7 @@ header input{
 
 header input:hover{
     background-color: rgb(226, 224, 224);
+    cursor: pointer;
  
 }
 
@@ -107,14 +114,38 @@ header form{
 
 
 
-  div img:hover{
-    opacity: 0.6;
+div img:hover{
+    opacity: 0.8;
+    cursor: zoom-in;
+    box-shadow: -10px 1px 10px rgb(0 15 25 / 0.5);
 }
 
 div img:active{
     opacity: 0.5;
 }
-  
+
+.pregunta{
+    position: fixed;
+    bottom: 10%;
+    left: 93%;
+    margin-right: 100px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    box-shadow: .5px 1px 2px rgb(0 0 0);
+    margin-right: 30px;
+    z-index: 100;
+}
+
+
+.pregunta:hover{
+    background-color: rgb(226, 224, 224);
+    cursor: pointer;
+   
+}
+
 @media screen and (max-width: 1333px ) {
     
     header input{
@@ -163,10 +194,10 @@ div img:active{
     }
 
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 531px) {
 
     header input{
-        width: 75px;
+        width: 50px;
     }
 
     header form{
