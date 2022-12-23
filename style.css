@@ -63,8 +63,6 @@ header input{
 
 header input:hover{
     background-color: rgb(226, 224, 224);
-    cursor: pointer;
- 
 }
 
 header input:active{
